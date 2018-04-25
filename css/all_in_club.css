@@ -1,0 +1,407 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../font/Roboto-Bold.ttf); }
+@font-face {
+  font-family: RobotoSlab-Bold;
+  src: url(../font/RobotoSlab-Bold.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto; }
+
+nav {
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0vw 0.3vw 2vw rgba(0, 0, 0, 0.15); }
+  nav figure {
+    width: 11vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    float: left; }
+    nav figure img {
+      width: 100%; }
+  nav a {
+    text-decoration: none; }
+  nav h3 {
+    float: right;
+    margin-top: 1vw;
+    margin-right: 6vw;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    border-radius: 0.5vw;
+    background-color: #9BC03D;
+    font-size: 0.9vw;
+    color: white; }
+    nav h3 a {
+      color: white !important; }
+  nav h3:hover {
+    background-color: #89a542; }
+  nav ul {
+    float: right;
+    margin-top: 5vw;
+    margin-right: -16vw;
+    width: 50vw; }
+    nav ul li {
+      float: left;
+      margin-right: 3vw;
+      list-style: none;
+      font-size: 1.25vw;
+      position: relative;
+      z-index: 2; }
+    nav ul #menu1:hover .dropdown {
+      display: block; }
+    nav ul #menu4:hover .dropdown {
+      display: block; }
+    nav ul .dropdown {
+      display: none;
+      width: 10vw;
+      position: absolute;
+      padding-top: 2.9vw;
+      cursor: pointer;
+      z-index: 0; }
+      nav ul .dropdown a {
+        font-size: 1.25vw; }
+        nav ul .dropdown a p {
+          width: 14vw;
+          padding-top: 0.5vw;
+          padding-bottom: 0.5vw;
+          background-color: white;
+          padding-left: 1vw; }
+        nav ul .dropdown a .one {
+          border-top: solid 0.5vw #9BC03D; }
+        nav ul .dropdown a p:hover {
+          background-color: #9BC03D;
+          color: white; }
+    nav ul #menu4 .dropdown {
+      margin-left: 30.5vw; }
+  nav a {
+    color: black; }
+  nav a:hover {
+    color: #24A3DD; }
+
+article {
+  padding-top: 10vw; }
+  article h1 {
+    margin-left: 15vw;
+    font-family: RobotoSlab-Bold;
+    font-size: 2.5vw;
+    margin-top: 2vw;
+    color: #24A3DD; }
+  article h2 {
+    margin-left: 17vw;
+    font-family: RobotoSlab-Bold;
+    font-size: 2vw;
+    margin-top: 1vw;
+    color: #9BC03D; }
+  article h3 {
+    margin-left: 18vw;
+    font-family: RobotoSlab-Bold;
+    font-size: 1.7vw;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+    color: #9BC03D; }
+  article form {
+    margin-left: 17vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 42vw;
+    float: left; }
+    article form label {
+      width: 12vw;
+      float: left;
+      font-size: 1.2vw; }
+    article form input {
+      width: 28vw;
+      margin-bottom: 1vw;
+      float: left; }
+    article form input[type="submit"] {
+      width: 20vw;
+      margin-left: 12vw;
+      height: 3vw;
+      margin-top: 1vw;
+      font-size: 1.3vw;
+      font-family: Roboto-Bold;
+      cursor: pointer;
+      background-color: #9BC03D;
+      border: none;
+      color: white;
+      border-radius: 0.2vw; }
+    article form input[type="submit"]:hover {
+      background-color: #89a542; }
+  article img {
+    width: 50vw;
+    margin-left: 23vw; }
+  article p {
+    margin-left: 17vw;
+    width: 60vw;
+    font-family: Roboto;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw; }
+  article ul {
+    margin-top: 2vw;
+    margin-bottom: 2vw; }
+    article ul li {
+      margin-left: 20vw;
+      width: 65vw;
+      font-family: Roboto;
+      font-size: 1.2vw;
+      list-style: circle; }
+  article #sobre img {
+    width: 24vw;
+    margin-left: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 11vw; }
+  article #como_utilizar {
+    margin-top: 5vw; }
+  article #nav_sec {
+    position: fixed;
+    top: 15vw;
+    left: 85vw; }
+    article #nav_sec p {
+      margin: 0;
+      padding: 0.4vw;
+      text-align: right;
+      width: 9vw;
+      cursor: pointer; }
+    article #nav_sec p:hover {
+      background-color: #9BC03D;
+      color: white; }
+
+footer {
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  float: left;
+  margin-top: 2vw; }
+  footer .sect {
+    margin-top: 2vw;
+    width: 18vw;
+    margin-left: 6vw;
+    float: left; }
+    footer .sect h1 {
+      font-family: RobotoSlab-Bold;
+      font-size: 1.25vw;
+      margin-bottom: 1.5vw; }
+    footer .sect h1 strong {
+      font-family: RobotoSlab-Bold;
+      font-size: 1.25vw;
+      margin-bottom: 1.5vw;
+      color: #24A3DD; }
+    footer .sect a {
+      float: left;
+      width: 20vw;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 0.7vw;
+      font-size: 0.8vw; }
+    footer .sect a:hover {
+      color: #24A3DD; }
+    footer .sect p {
+      margin: 0;
+      font-size: 0.8vw; }
+  footer p {
+    float: left;
+    margin: 3vw 0 2vw 5vw;
+    font-size: 0.8vw; }
+
+@media screen and (max-width: 850px) {
+  nav figure {
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 4vw; }
+  nav #hamburguer {
+    float: left;
+    position: absolute;
+    right: 10vw;
+    margin-top: 4vw;
+    cursor: pointer; }
+    nav #hamburguer .barra {
+      width: 10vw;
+      height: 1vw;
+      border: solid #AFCA3B 0.5vw;
+      border-radius: 5vw;
+      background-color: white;
+      margin-top: 1vw; }
+  nav #menu_mobile {
+    width: 70vw;
+    height: 100vh;
+    background-color: #9BC03D;
+    position: fixed;
+    right: 0;
+    display: block;
+    margin-right: -70vw; }
+  nav h3 {
+    margin-top: 70vw;
+    margin-right: 12vw;
+    font-size: 4vw; }
+  nav ul {
+    float: right;
+    margin-top: 20vw;
+    margin-right: -37vw; }
+    nav ul li, nav ul a {
+      float: right;
+      margin-top: 1.5vw;
+      font-size: 4vw;
+      color: white; }
+    nav ul #menu1:hover .dropdown {
+      display: none; }
+    nav ul #menu4:hover .dropdown {
+      display: none; }
+
+  article {
+    padding-top: 17vw; }
+    article h1 {
+      font-size: 6vw; }
+    article h2 {
+      margin-left: 20vw;
+      font-size: 5vw;
+      margin-top: 2vw; }
+    article h3 {
+      margin-left: 17vw;
+      font-size: 3.5vw; }
+    article form {
+      margin-left: 17vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+      width: 66vw;
+      float: left; }
+      article form label {
+        width: 31vw;
+        float: left;
+        font-size: 4vw; }
+      article form input {
+        width: 31vw;
+        height: 3.5vw;
+        margin-bottom: 3vw; }
+      article form input[type="submit"] {
+        width: 40vw;
+        margin-left: 15vw;
+        height: 8vw;
+        margin-top: 4vw;
+        font-size: 4.3vw;
+        border-radius: 0.5vw; }
+    article p {
+      margin-left: 17vw;
+      width: 60vw;
+      font-family: Roboto;
+      font-size: 3.5vw;
+      margin-top: 4vw;
+      margin-bottom: 5vw; }
+    article #sobre img {
+      width: 60vw;
+      margin-left: 20vw;
+      margin-top: 3vw;
+      margin-bottom: 5vw; }
+    article #como_utilizar {
+      margin-top: 5vw; }
+    article #nav_sec {
+      display: none; }
+
+  footer {
+    display: none; } }
+@media only screen and (max-device-width: 801px) and (orientation: portrait) {
+  nav figure {
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 4vw; }
+  nav #hamburguer {
+    float: left;
+    position: absolute;
+    right: 10vw;
+    margin-top: 4vw;
+    cursor: pointer; }
+    nav #hamburguer .barra {
+      width: 10vw;
+      height: 1vw;
+      border: solid #AFCA3B 0.5vw;
+      border-radius: 5vw;
+      background-color: white;
+      margin-top: 1vw; }
+  nav #menu_mobile {
+    width: 70vw;
+    height: 100vh;
+    background-color: #9BC03D;
+    position: fixed;
+    right: 0;
+    display: block;
+    margin-right: -70vw; }
+  nav h3 {
+    margin-top: 70vw;
+    margin-right: 12vw;
+    font-size: 4vw; }
+  nav ul {
+    float: right;
+    margin-top: 20vw;
+    margin-right: -37vw; }
+    nav ul li, nav ul a {
+      float: right;
+      margin-top: 1.5vw;
+      font-size: 4vw;
+      color: white; }
+    nav ul #menu1:hover .dropdown {
+      display: none; }
+    nav ul #menu4:hover .dropdown {
+      display: none; }
+
+  article {
+    padding-top: 17vw; }
+    article h1 {
+      font-size: 6vw; }
+    article h2 {
+      margin-left: 20vw;
+      font-size: 5vw;
+      margin-top: 2vw; }
+    article h3 {
+      margin-left: 17vw;
+      font-size: 3.5vw; }
+    article form {
+      margin-left: 17vw;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+      width: 66vw;
+      float: left; }
+      article form label {
+        width: 31vw;
+        float: left;
+        font-size: 4vw; }
+      article form input {
+        width: 31vw;
+        height: 3.5vw;
+        margin-bottom: 3vw; }
+      article form input[type="submit"] {
+        width: 40vw;
+        margin-left: 15vw;
+        height: 8vw;
+        margin-top: 4vw;
+        font-size: 4.3vw;
+        border-radius: 0.5vw; }
+    article p {
+      margin-left: 17vw;
+      width: 60vw;
+      font-family: Roboto;
+      font-size: 3.5vw;
+      margin-top: 4vw;
+      margin-bottom: 5vw; }
+    article img {
+      width: 80vw;
+      margin-left: 10vw;
+      margin-top: 3vw; }
+    article #sobre img {
+      width: 60vw;
+      margin-left: 20vw;
+      margin-top: 3vw;
+      margin-bottom: 5vw; }
+    article #como_utilizar {
+      margin-top: 5vw; }
+    article #nav_sec {
+      display: none; }
+
+  footer {
+    display: none; } }
+
+/*# sourceMappingURL=all_in_club.css.map */

@@ -1,0 +1,554 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto-Regular.ttf); }
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../font/Roboto-Bold.ttf); }
+@font-face {
+  font-family: RobotoSlab-Bold;
+  src: url(../font/RobotoSlab-Bold.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto; }
+
+nav {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0vw 0.3vw 2vw rgba(0, 0, 0, 0.15); }
+  nav figure {
+    width: 11vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    float: left; }
+    nav figure img {
+      width: 100%; }
+  nav a {
+    text-decoration: none; }
+  nav h3 {
+    float: right;
+    margin-top: 1vw;
+    margin-right: 6vw;
+    padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+    border-radius: 0.5vw;
+    background-color: #9BC03D;
+    font-size: 0.9vw;
+    color: white;
+    position: absolute;
+    right: 6vw; }
+    nav h3 a {
+      color: white !important; }
+  nav h3:hover {
+    background-color: #89a542; }
+  nav ul {
+    float: right;
+    margin-top: 4vw;
+    margin-right: 1vw;
+    width: 50vw;
+    margin-bottom: 2vw; }
+    nav ul li {
+      float: left;
+      margin-right: 3vw;
+      list-style: none;
+      font-size: 1.25vw;
+      position: relative;
+      z-index: 2; }
+    nav ul #menu1:hover .dropdown {
+      display: block; }
+    nav ul #menu4:hover .dropdown {
+      display: block; }
+    nav ul .dropdown {
+      display: none;
+      width: 10vw;
+      position: absolute;
+      padding-top: 2.9vw;
+      cursor: pointer;
+      z-index: 0; }
+      nav ul .dropdown a {
+        font-size: 1.25vw; }
+        nav ul .dropdown a p {
+          width: 14vw;
+          padding-top: 0.5vw;
+          padding-bottom: 0.5vw;
+          background-color: white;
+          padding-left: 1vw; }
+        nav ul .dropdown a .one {
+          border-top: solid 0.5vw #9BC03D; }
+        nav ul .dropdown a p:hover {
+          background-color: #9BC03D;
+          color: white; }
+    nav ul #menu4 .dropdown {
+      margin-left: 30.5vw; }
+  nav a {
+    color: black; }
+  nav a:hover {
+    color: #24A3DD; }
+  nav #sec {
+    margin-top: 2vw;
+    margin-right: 5vw;
+    width: 54vw;
+    float: right;
+    margin-bottom: -1vw; }
+    nav #sec li {
+      font-size: 1vw; }
+
+header {
+  padding-top: 11vw; }
+  header h1 {
+    margin-left: 15vw;
+    font-family: RobotoSlab-Bold;
+    font-size: 2.5vw;
+    color: #24A3DD; }
+  header h2 {
+    margin-left: 17vw;
+    font-family: RobotoSlab-Bold;
+    font-size: 2vw;
+    margin-top: 1vw;
+    color: #9BC03D; }
+  header p {
+    font-size: 1.25vw;
+    width: 40vw;
+    margin-left: 17vw;
+    margin-top: 2vw;
+    margin-bottom: 13.5vw; }
+  header form {
+    margin-top: 3vw;
+    margin-left: 20vw;
+    width: 34vw; }
+    header form fieldset {
+      border: none; }
+    header form h2 {
+      margin-left: 2vw !important;
+      font-size: 1.2vw;
+      margin-top: 0vw;
+      margin-bottom: 1vw; }
+    header form label {
+      width: 12vw;
+      min-height: 1.2vw;
+      float: left;
+      font-size: 1.2vw;
+      line-height: 1.2vw;
+      margin-bottom: 1vw; }
+    header form input, header form textarea {
+      width: 20vw;
+      margin-bottom: 1vw;
+      float: right;
+      height: 1.2vw;
+      font-size: 0.8vw;
+      padding-left: 0.3vw; }
+    header form textarea {
+      max-width: 20vw;
+      height: 5vw; }
+    header form .radio {
+      float: left;
+      width: 6vw; }
+    header form #send {
+      width: 10vw;
+      height: 2vw;
+      background-color: white;
+      border: none;
+      border-radius: 0.3vw;
+      color: #24A3DD;
+      border: solid 0.1vw #24A3DD;
+      cursor: pointer;
+      padding-left: 0;
+      margin-left: 5vw;
+      margin-bottom: 9vw;
+      font-size: 1vw; }
+    header form #send:hover {
+      background-color: #24A3DD;
+      color: white; }
+
+article h1 {
+  margin-left: 15vw;
+  font-family: RobotoSlab-Bold;
+  font-size: 2.5vw;
+  color: #24A3DD;
+  margin-top: 5vw; }
+article h2 {
+  margin-left: 17vw;
+  font-family: RobotoSlab-Bold;
+  font-size: 2vw;
+  margin-top: 1vw;
+  color: #9BC03D; }
+article p {
+  font-size: 1.25vw;
+  width: 40vw;
+  margin-left: 17vw;
+  margin-top: 2vw;
+  margin-bottom: 0.5vw;
+  line-height: 2vw; }
+article #menu_account {
+  margin-top: 4vw; }
+  article #menu_account li {
+    float: left;
+    list-style: none;
+    margin-left: 20vw; }
+  article #menu_account a {
+    padding: 0.5vw 20vw 0.5vw 20vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25vw;
+    line-height: 3vw;
+    background-color: white;
+    float: left;
+    width: 15vw;
+    border-radius: 0.3vw;
+    color: #24A3DD;
+    border: solid 0.1vw #24A3DD;
+    margin-bottom: 1vw; }
+  article #menu_account li:hover a {
+    background-color: #24A3DD;
+    color: white; }
+article #medicos, article #clinicas {
+  margin-left: 20vw;
+  margin-top: 2vw;
+  margin-bottom: 10vw;
+  border-collapse: collapse; }
+  article #medicos th, article #medicos td, article #clinicas th, article #clinicas td {
+    width: 10vw;
+    font-size: 1.25vw;
+    text-align: center;
+    border: 0.15vw solid #333333; }
+  article #medicos th, article #clinicas th {
+    color: #24A3DD; }
+
+#map {
+  margin-top: 2vw;
+  margin-left: 5%;
+  width: 90%;
+  height: 30vw;
+  margin-bottom: 5vw; }
+
+footer {
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  float: left;
+  margin-top: 2vw; }
+  footer .sect {
+    margin-top: 2vw;
+    width: 18vw;
+    margin-left: 6vw;
+    float: left; }
+    footer .sect h1 {
+      font-family: RobotoSlab-Bold;
+      font-size: 1.25vw;
+      margin-bottom: 1.5vw; }
+    footer .sect h1 strong {
+      font-family: RobotoSlab-Bold;
+      font-size: 1.25vw;
+      margin-bottom: 1.5vw;
+      color: #24A3DD; }
+    footer .sect a {
+      float: left;
+      width: 20vw;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 0.7vw;
+      font-size: 0.8vw; }
+    footer .sect a:hover {
+      color: #24A3DD; }
+    footer .sect p {
+      margin: 0;
+      font-size: 0.8vw; }
+  footer p {
+    float: left;
+    margin: 3vw 0 2vw 5vw;
+    font-size: 0.8vw; }
+
+@media screen and (max-width: 850px) {
+  nav figure {
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 4vw; }
+  nav #sec {
+    margin-top: 19vw;
+    margin-right: 5vw;
+    width: 54vw;
+    float: right;
+    margin-bottom: -1vw; }
+    nav #sec li {
+      font-size: 1vw; }
+  nav #hamburguer {
+    float: left;
+    position: absolute;
+    right: 10vw;
+    margin-top: 4vw;
+    cursor: pointer; }
+    nav #hamburguer .barra {
+      width: 10vw;
+      height: 1vw;
+      border: solid #AFCA3B 0.5vw;
+      border-radius: 5vw;
+      background-color: white;
+      margin-top: 1vw; }
+  nav #menu_mobile {
+    width: 70vw;
+    height: 100vh;
+    background-color: #9BC03D;
+    position: fixed;
+    right: 0;
+    display: block;
+    margin-right: -70vw; }
+  nav h3 {
+    margin-top: 70vw;
+    margin-right: 12vw;
+    font-size: 4vw; }
+  nav ul {
+    float: left;
+    margin-top: 7vw;
+    margin-right: 0vw;
+    margin-left: 14vw; }
+    nav ul li, nav ul a {
+      float: right;
+      margin-top: 1.5vw;
+      font-size: 4vw;
+      color: white; }
+    nav ul #menu1:hover .dropdown {
+      display: none; }
+    nav ul #menu4:hover .dropdown {
+      display: none; }
+
+  header {
+    padding-top: 20vw; }
+    header h1 {
+      margin-left: 15vw;
+      font-size: 6vw; }
+    header h2 {
+      font-size: 3.5vw; }
+    header p {
+      font-size: 3vw;
+      width: 60vw;
+      margin-left: 17vw;
+      margin-top: 2vw;
+      margin-bottom: 13.5vw; }
+    header form {
+      margin-top: 7vw;
+      width: 80vw;
+      margin-left: 10vw; }
+      header form fieldset {
+        margin-top: 4vw; }
+      header form label {
+        width: 20vw;
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-bottom: 1vw; }
+      header form input, header form textarea {
+        width: 45vw;
+        margin-bottom: 1vw;
+        float: right;
+        height: 4vw;
+        font-size: 3vw;
+        padding-left: 0.8vw; }
+      header form textarea {
+        max-width: 45vw;
+        height: 20vw; }
+      header form .radio {
+        float: left;
+        width: 6vw; }
+      header form #send {
+        width: 25vw;
+        height: 6vw;
+        border-radius: 0.8vw;
+        border: solid 0.4vw #24A3DD;
+        font-size: 3.5vw;
+        margin-top: 3vw; }
+      header form #send:hover {
+        background-color: #24A3DD;
+        color: white; }
+
+  article h1 {
+    margin-left: 15vw;
+    font-size: 6vw;
+    margin-top: 20vw; }
+  article h2 {
+    font-size: 3.5vw; }
+  article p {
+    font-size: 3.5vw;
+    width: 80vw;
+    margin-left: 17vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    line-height: 6vw; }
+  article #menu_account {
+    margin-top: 6vw; }
+    article #menu_account li {
+      float: left;
+      list-style: none;
+      margin-left: 10vw; }
+    article #menu_account a {
+      padding: 3vw 20vw 3vw 20vw;
+      font-size: 4vw;
+      line-height: 4vw;
+      width: 40vw;
+      border-radius: 1vw;
+      margin-bottom: 3vw; }
+  article #medicos, article #clinicas {
+    margin-left: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    border-collapse: collapse; }
+    article #medicos th, article #medicos td, article #clinicas th, article #clinicas td {
+      width: 17vw;
+      font-size: 2.5vw;
+      text-align: center;
+      border: 0.35vw solid #333333;
+      padding: 1vw 0 1vw 0; }
+    article #medicos td, article #clinicas td {
+      font-size: 3vw; }
+    article #medicos th, article #clinicas th {
+      color: #24A3DD; }
+
+  footer {
+    display: none; } }
+@media only screen and (max-device-width: 801px) and (orientation: portrait) {
+  nav figure {
+    width: 30vw;
+    margin-left: 10vw;
+    margin-top: 4vw; }
+  nav #sec {
+    margin-top: 19vw;
+    margin-right: 5vw;
+    width: 54vw;
+    float: right;
+    margin-bottom: -1vw; }
+    nav #sec li {
+      font-size: 1vw; }
+  nav #hamburguer {
+    float: left;
+    position: absolute;
+    right: 10vw;
+    margin-top: 4vw;
+    cursor: pointer; }
+    nav #hamburguer .barra {
+      width: 10vw;
+      height: 1vw;
+      border: solid #AFCA3B 0.5vw;
+      border-radius: 5vw;
+      background-color: white;
+      margin-top: 1vw; }
+  nav #menu_mobile {
+    width: 70vw;
+    height: 100vh;
+    background-color: #9BC03D;
+    position: fixed;
+    right: 0;
+    display: block;
+    margin-right: -70vw; }
+  nav h3 {
+    margin-top: 70vw;
+    margin-right: 12vw;
+    font-size: 4vw; }
+  nav ul {
+    float: left;
+    margin-top: 7vw;
+    margin-right: 0vw;
+    margin-left: 14vw; }
+    nav ul li, nav ul a {
+      float: right;
+      margin-top: 1.5vw;
+      font-size: 4vw;
+      color: white; }
+    nav ul #menu1:hover .dropdown {
+      display: none; }
+    nav ul #menu4:hover .dropdown {
+      display: none; }
+
+  header {
+    padding-top: 20vw; }
+    header h1 {
+      margin-left: 15vw;
+      font-size: 6vw; }
+    header h2 {
+      font-size: 3.5vw; }
+    header p {
+      font-size: 3vw;
+      width: 60vw;
+      margin-left: 17vw;
+      margin-top: 2vw;
+      margin-bottom: 13.5vw; }
+    header form {
+      margin-top: 7vw;
+      width: 80vw;
+      margin-left: 10vw; }
+      header form fieldset {
+        margin-top: 4vw; }
+      header form label {
+        width: 20vw;
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-bottom: 1vw; }
+      header form input, header form textarea {
+        width: 45vw;
+        margin-bottom: 1vw;
+        float: right;
+        height: 4vw;
+        font-size: 3vw;
+        padding-left: 0.8vw; }
+      header form textarea {
+        max-width: 45vw;
+        height: 20vw; }
+      header form .radio {
+        float: left;
+        width: 6vw; }
+      header form #send {
+        width: 25vw;
+        height: 6vw;
+        border-radius: 0.8vw;
+        border: solid 0.4vw #24A3DD;
+        font-size: 3.5vw;
+        margin-top: 3vw; }
+      header form #send:hover {
+        background-color: #24A3DD;
+        color: white; }
+
+  article h1 {
+    margin-left: 15vw;
+    font-size: 6vw;
+    margin-top: 20vw; }
+  article h2 {
+    font-size: 3.5vw; }
+  article p {
+    font-size: 3.5vw;
+    width: 80vw;
+    margin-left: 17vw;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+    line-height: 8vw; }
+  article #menu_account {
+    margin-top: 6vw; }
+    article #menu_account li {
+      float: left;
+      list-style: none;
+      margin-left: 10vw; }
+    article #menu_account a {
+      padding: 3vw 20vw 3vw 20vw;
+      font-size: 4vw;
+      line-height: 4vw;
+      width: 40vw;
+      border-radius: 1vw;
+      margin-bottom: 3vw; }
+  article #medicos, article #clinicas {
+    margin-left: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    border-collapse: collapse; }
+    article #medicos th, article #medicos td, article #clinicas th, article #clinicas td {
+      width: 17vw;
+      font-size: 2.5vw;
+      text-align: center;
+      border: 0.35vw solid #333333;
+      padding: 1vw 0 1vw 0; }
+    article #medicos td, article #clinicas td {
+      font-size: 3vw; }
+    article #medicos th, article #clinicas th {
+      color: #24A3DD; }
+
+  footer {
+    display: none; } }
+
+/*# sourceMappingURL=backoffice.css.map */
